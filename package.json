@@ -1,0 +1,22 @@
+{
+  "name": "form_declutter",
+  "version": "1.0.0",
+  "description": "I want to fill forms for job applications, So I want to make a app/website in which I will write all the generic or detailed answers to all the questions and there would be a copy button at the right.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
