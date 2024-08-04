@@ -6,8 +6,4 @@ const QuestionSchema = new mongoose.Schema({
 	keywords: [String]
 });
 
-
-
-
-
 module.exports= mongoose.model('Question', QuestionSchema);
