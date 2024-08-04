@@ -6,7 +6,7 @@ const QuestionList = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/questions')
+    axios.get('https://form-declutter-be.onrender.com/api/questions')
       .then(res => setQuestions(res.data))
       .catch(err => console.error('Error fetching data:', err));
   }, []);

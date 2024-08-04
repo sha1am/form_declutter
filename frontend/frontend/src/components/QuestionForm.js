@@ -14,7 +14,7 @@ const QuestionForm = () => {
       keywords: keywords.split(',').map(k => k.trim())
     };
 
-    axios.post('http://localhost:5000/api/questions', newQuestion)
+    axios.post('https://form-declutter-be.onrender.com/api/questions', newQuestion)
       .then(res => {
         console.log('Record added/updated:', res.data); // Log the response data
         // Clear form fields
