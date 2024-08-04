@@ -1,0 +1,15 @@
+[build]
+  base = "frontend/frontend"
+  publish = "build"
+  command = "npm run build"
+
+# Optional: Set environment variables
+#[build.environment]
+#  NODE_VERSION = "18.20.4"
+#  REACT_APP_API_URL = "https://form-declutter-be.onrender.com"
+
+# Optional: Redirects
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
