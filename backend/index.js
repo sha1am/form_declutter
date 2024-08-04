@@ -2,9 +2,17 @@ require('dotenv').config();
 
 const express = require('express');
 const mongoose = require('mongoose');
+const cors= require('cors');
 const app = express();
 
+// Configure CORS to allow requests from your Netlify domain
+const corsOptions = {
+  origin: 'https://formdeclutter.netlify.app',
+  optionsSuccessStatus: 200 // For legacy browser support
+};
+
 app.use(express.json()); // To parse JSON data
+app.use(cors(corsOptions));
 
 // Define a schema and model for questions
 const questionSchema = new mongoose.Schema({
